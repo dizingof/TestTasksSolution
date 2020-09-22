@@ -18,7 +18,7 @@ namespace Question3
 
         public static string CreateString(object x, object  y)
         {
-            var stringResult = string.Format(" \"{0}\":\"{1}\" ", x, y );
+            var stringResult = string.Format(@"{{""{0}"": {1} }}", x, y);
             return stringResult;
         }
     }
